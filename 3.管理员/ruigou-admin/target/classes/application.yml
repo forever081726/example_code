@@ -1,0 +1,22 @@
+server: 
+   post: 8080
+   servlet:
+      context-path: /ruigou
+      
+logging: 
+    level: 
+        org.springframework: debug;
+        com.neusoft.ruigou.mapper: debug
+       
+spring: 
+   datasource: 
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/ruigou?characterEncoding=utf-8
+      username: root
+      password: 123
+      
+mybatis:
+   type-aliases-package: com.neusoft.ruigou.po
+   
+ 
+   
